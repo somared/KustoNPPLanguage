@@ -14,6 +14,6 @@ Syntax highlighting in notepad++ for Kusto Query Language (KQL).
 4. Make changes to any of the four tabs (Folder & Default, Keywords List, Comment & Number, Operators & Delimiters).
 5. Click on Export and save the file. 
 
-## Contibuting 
+## Contributing 
 If you want to change anything that will be helful to everyone or if I have missing anything, feel free to make changes and send a pull request. 
 

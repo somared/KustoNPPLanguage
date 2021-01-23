@@ -1,5 +1,5 @@
 <NotepadPlus>
-    <UserLang name="Kusto" ext="kql" udlVersion="2.1">
+    <UserLang name="KQL" ext="kql" udlVersion="2.1">
         <Settings>
             <Global caseIgnored="yes" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
             <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="no" />
@@ -13,52 +13,52 @@
             <Keywords name="Numbers, suffix1"></Keywords>
             <Keywords name="Numbers, suffix2"></Keywords>
             <Keywords name="Numbers, range"></Keywords>
-            <Keywords name="Operators1">| + , = ( ) - $  * / % &lt; &gt; ! ~ ..</Keywords>
-            <Keywords name="Operators2">in </Keywords>
-            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Operators1">| + , = ( ) - $ * / % &lt; &gt; ! ~ .. . :</Keywords>
+            <Keywords name="Operators2">in</Keywords>
+            <Keywords name="Folders in code1, open">{</Keywords>
             <Keywords name="Folders in code1, middle"></Keywords>
-            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code1, close">}</Keywords>
             <Keywords name="Folders in code2, open"></Keywords>
             <Keywords name="Folders in code2, middle"></Keywords>
             <Keywords name="Folders in code2, close"></Keywords>
             <Keywords name="Folders in comment, open"></Keywords>
             <Keywords name="Folders in comment, middle"></Keywords>
             <Keywords name="Folders in comment, close"></Keywords>
-            <Keywords name="Keywords1">summarize order join kind where desc print extend </Keywords>
-            <Keywords name="Keywords2">by in on and or </Keywords>
-            <Keywords name="Keywords3">count arg_max datetime contains dynamic  has has_cs hasprefix hassuffix hassuffix_cs startswith_cs startswith endswith_cs endswith matches regex has_any between binary_and binary_not binary_or binary_shift_left binary_shift_right binary_xor bitset_count_ones tobool todatetime todouble tostring totimespan ago datetime_add datetime_part datetime_diff dayofmonth dayofweek dayofyear endofday endofmonth endofweek endofyear format_datetime format_timespan getmonth getyear hourofday make_datetime make_timespan monthofyear now startofday startofmonth startofweek startofyear todatetime totimespan unixtime_microseconds_todatetime unixtime_milliseconds_todatetime unixtime_nanoseconds_todatetime unixtime_seconds_todatetime weekofyear array_concat array_iif array_index_of array_length array_slice array_split bag_keys pack pack_all pack_array repeat set_difference set_has_element set_intersect set_union treepath zip next prev row_cumsum row_number toscalar abs acos asin atan atan2 beta_cdf beta_inv beta_pdf cos cot degrees exp exp10 exp2 gamma isfinite isinf isnan log log10 log2 loggamma not pi pow radians rand range round sign sin sqrt tan welch_test column_ifexists current_cluster_endpoint current_database current_principal current_principal_details current_principal_is_member_of cursor_after estimate_data_size extent_id extent_tags ingestion_time bin bin_at ceiling floor case coalesce iif iff max_of min_of series_add series_divide series_equals series_greater series_greater_equals series_less series_less_equals series_multiply series_not_equals series_subtract series_decompose series_decompose_anomalies series_decompose_forecast series_fill_backward series_fill_const series_fill_forward series_fill_linear series_fir series_fit_2lines series_fit_2lines_dynamic series_fit_line series_fit_line_dynamic series_iir series_outliers series_pearson_correlation series_periods_detect series_periods_validate series_seasonal series_stats series_stats_dynamic base64_encode_tostring base64_decode_tostring base64_decode_toarray countof extract extract_all extractjson indexof isempty isnotempty isnotnull isnull parse_command_line parse_csv parse_ipv4 parse_ipv4_mask parse_ipv6 parse_ipv6_mask parse_json parse_url parse_urlquery parse_version replace reverse split strcat strcat_delim strcmp strlen strrep substring toupper translate trim trim_end trim_start url_decode url_encode ipv4_compare ipv4_is_match parse_ipv4 parse_ipv4_mask ipv6_compare ipv6_is_match parse_ipv6 parse_ipv6_mask gettype dcount_hll hll_merge percentile_tdigest percentrank_tdigest rank_tdigest tdigest_merge geo_distance_2points geo_distance_point_to_line geo_point_in_circle geo_point_in_polygon geo_point_to_geohash geo_geohash_to_central_point geo_point_to_s2cell geo_s2cell_to_central_point geo_polygon_to_s2cells geo_line_densify geo_polygon_densify hash hash_combine hash_many hash_md5 hash_sha256 any anyif arg_max arg_min avg avgif binary_all_andbinary_all_or binary_all_xorbuildschema() count countif dcount dcountif hll hll_merge make_bag make_bag_if make_list make_list_if make_list_with_nulls make_set make_set_if max maxif min minif percentiles percentile stdev stdevif stdevp sum sumif tdigest tdigest_merge variance varianceif variancep next prev row_cumsum row_number row_window_session make series_add series_decompose series_decompose_anomalies series_decompose_forecast series_divide series_equals series_fill_backward series_fill_const series_fill_forward series_fill_linear series_fir series_fit_2lines series_fit_2lines_dynamic series_fit_line series_fit_line_dynamic series_greater series_greater_equals series_iir series_less series_less_equals series_multiply series_not_equals series_outliers series_pearson_correlation series_periods_detect series_periods_validate series_seasonal series_stats series_stats_dynamic series_subtract geo_distance_2points geo_distance_point_to_line geo_geohash_to_central_point geo_line_densify geo_point_in_circle geo_point_in_polygon geo_point_to_geohash geo_point_to_s2cell geo_polygon_to_s2cells geo_polygon_densify geo_s2cell_to_central_point </Keywords>
-            <Keywords name="Keywords4">external_table  cluster database materialize table toscalar </Keywords>
-            <Keywords name="Keywords5"></Keywords>
+            <Keywords name="Keywords1"> project-away summarize order join kind where desc print extend project function let</Keywords>
+            <Keywords name="Keywords2">by in on and or not with</Keywords>
+            <Keywords name="Keywords3">count arg_max datetime contains dynamic has has_cs hasprefix hassuffix hassuffix_cs startswith_cs startswith endswith_cs endswith matches regex has_any between binary_and binary_not binary_or binary_shift_left binary_shift_right binary_xor bitset_count_ones tobool todatetime todouble tostring totimespan ago datetime_add datetime_part datetime_diff dayofmonth dayofweek dayofyear endofday endofmonth endofweek endofyear format_datetime format_timespan getmonth getyear hourofday make_datetime make_timespan monthofyear now startofday startofmonth startofweek startofyear todatetime totimespan unixtime_microseconds_todatetime unixtime_milliseconds_todatetime unixtime_nanoseconds_todatetime unixtime_seconds_todatetime weekofyear array_concat array_iif array_index_of array_length array_slice array_split bag_keys pack pack_all pack_array repeat set_difference set_has_element set_intersect set_union treepath zip next prev row_cumsum row_number toscalar abs acos asin atan atan2 beta_cdf beta_inv beta_pdf cos cot degrees exp exp10 exp2 gamma isfinite isinf isnan log log10 log2 loggamma not pi pow radians rand range round sign sin sqrt tan welch_test column_ifexists current_cluster_endpoint current_database current_principal current_principal_details current_principal_is_member_of cursor_after estimate_data_size extent_id extent_tags ingestion_time bin bin_at ceiling floor case coalesce iif iff max_of min_of series_add series_divide series_equals series_greater series_greater_equals series_less series_less_equals series_multiply series_not_equals series_subtract series_decompose series_decompose_anomalies series_decompose_forecast series_fill_backward series_fill_const series_fill_forward series_fill_linear series_fir series_fit_2lines series_fit_2lines_dynamic series_fit_line series_fit_line_dynamic series_iir series_outliers series_pearson_correlation series_periods_detect series_periods_validate series_seasonal series_stats series_stats_dynamic base64_encode_tostring base64_decode_tostring base64_decode_toarray countof extract extract_all extractjson indexof isempty isnotempty isnotnull isnull parse_command_line parse_csv parse_ipv4 parse_ipv4_mask parse_ipv6 parse_ipv6_mask parse_json parse_url parse_urlquery parse_version replace reverse split strcat strcat_delim strcmp strlen strrep substring toupper translate trim trim_end trim_start url_decode url_encode ipv4_compare ipv4_is_match parse_ipv4 parse_ipv4_mask ipv6_compare ipv6_is_match parse_ipv6 parse_ipv6_mask gettype dcount_hll hll_merge percentile_tdigest percentrank_tdigest rank_tdigest tdigest_merge geo_distance_2points geo_distance_point_to_line geo_point_in_circle geo_point_in_polygon geo_point_to_geohash geo_geohash_to_central_point geo_point_to_s2cell geo_s2cell_to_central_point geo_polygon_to_s2cells geo_line_densify geo_polygon_densify hash hash_combine hash_many hash_md5 hash_sha256 any anyif arg_max arg_min avg avgif binary_all_andbinary_all_or binary_all_xorbuildschema() count countif dcount dcountif hll hll_merge make_bag make_bag_if make_list make_list_if make_list_with_nulls make_set make_set_if max maxif min minif percentiles percentile stdev stdevif stdevp sum sumif tdigest tdigest_merge variance varianceif variancep next prev row_cumsum row_number row_window_session make series_add series_decompose series_decompose_anomalies series_decompose_forecast series_divide series_equals series_fill_backward series_fill_const series_fill_forward series_fill_linear series_fir series_fit_2lines series_fit_2lines_dynamic series_fit_line series_fit_line_dynamic series_greater series_greater_equals series_iir series_less series_less_equals series_multiply series_not_equals series_outliers series_pearson_correlation series_periods_detect series_periods_validate series_seasonal series_stats series_stats_dynamic series_subtract geo_distance_2points geo_distance_point_to_line geo_geohash_to_central_point geo_line_densify geo_point_in_circle geo_point_in_polygon geo_point_to_geohash geo_point_to_s2cell geo_polygon_to_s2cells geo_polygon_densify geo_s2cell_to_central_point</Keywords>
+            <Keywords name="Keywords4">external_table cluster database materialize table toscalar</Keywords>
+            <Keywords name="Keywords5">bool datetime dynamic guid int long real string timespan decimal </Keywords>
             <Keywords name="Keywords6"></Keywords>
             <Keywords name="Keywords7"></Keywords>
             <Keywords name="Keywords8"></Keywords>
             <Keywords name="Delimiters">00&quot; 01 02&quot; 03&apos; 04 05&apos; 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
         </KeywordLists>
         <Styles>
-            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="LINE COMMENTS" fgColor="007D00" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="NUMBERS" fgColor="008000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS1" fgColor="0000FF" bgColor="FFFFFF" fontStyle="1" nesting="0" />
-            <WordsStyle name="KEYWORDS2" fgColor="8000FF" bgColor="FFFFFF" fontStyle="1" nesting="0" />
-            <WordsStyle name="KEYWORDS3" fgColor="FF8000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS4" fgColor="800040" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS5" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS6" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="OPERATORS" fgColor="FF00FF" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS1" fgColor="808080" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS2" fgColor="808080" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
-            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="007D00" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="8000FF" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="FF8000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="800040" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="FF0080" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="80FF00" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="FF00FF" bgColor="FFFFFF" fontName="" fontStyle="1" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS2" fgColor="808080" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS3" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" nesting="0" />
         </Styles>
     </UserLang>
 </NotepadPlus>
